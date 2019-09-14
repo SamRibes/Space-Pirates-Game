@@ -1,6 +1,5 @@
 # Space-Pirates-Game
-A game that I made for my Games and Media course at uni
-
+A game that I made for my Games and Media course at uni. Some interesting files to look at are [Entities](https://github.com/SamRibes/Space-Pirates-Game/tree/master/Space%20Pirate%20Game/Entities) and [GameRoot](https://github.com/SamRibes/Space-Pirates-Game/tree/master/Space%20Pirate%20Game/GameRoot).
 # Game mechanics
 The player controls a space ship that auto fires bullets and the goal is to collect enemy drops and level up their ship until it gets to the second level and then the boss level.
 
