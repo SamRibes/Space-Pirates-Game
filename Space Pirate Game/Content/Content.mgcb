@@ -397,12 +397,12 @@
 /processorParam:TextureFormat=Color
 /build:Art/Pointer.png
 
-#begin Font/Font.spritefont
+#begin Fonts/File.spritefont
 /importer:FontDescriptionImporter
-/processor:FontDescriptionProcessor
+/processor:LocalizedFontProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
-/build:Font/Font.spritefont
+/build:Fonts/File.spritefont
 
 #begin Sound/explosion-01.wav
 /importer:WavImporter

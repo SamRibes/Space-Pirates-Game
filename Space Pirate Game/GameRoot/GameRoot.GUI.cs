@@ -17,10 +17,10 @@ namespace ShootShapesUp
             {
                 case GameState.LevelOne:
                 case GameState.LevelTwo:
-                    spriteBatch.DrawString(GameRoot.Font, (String.Format("Level {0}     Exp {1}", PlayerShip.Level, PlayerShip.Exp)), new Vector2(ScreenSize.X / 40, ScreenSize.Y / 40), Color.White);
-                    spriteBatch.DrawString(GameRoot.Font, String.Format("Health: "), new Vector2(ScreenSize.X / 40, (ScreenSize.Y / 40) * 2), Color.White);
-                    spriteBatch.DrawString(GameRoot.Font, String.Format("Lives: {0}", PlayerShip.Instance.Lives), new Vector2(ScreenSize.X / 40, (ScreenSize.Y / 40) * 3), Color.White);
-                    spriteBatch.DrawString(GameRoot.Font, (String.Format("Stage {0}", Stage)), new Vector2(ScreenSize.X - 200, 30), Color.White);
+                    spriteBatch.DrawString(Font, (String.Format("Level {0}     Exp {1}", PlayerShip.Level, PlayerShip.Exp)), new Vector2(ScreenSize.X / 40, ScreenSize.Y / 40), Color.White);
+                    spriteBatch.DrawString(Font, String.Format("Health: "), new Vector2(ScreenSize.X / 40, (ScreenSize.Y / 40) * 2), Color.White);
+                    spriteBatch.DrawString(Font, String.Format("Lives: {0}", PlayerShip.Instance.Lives), new Vector2(ScreenSize.X / 40, (ScreenSize.Y / 40) * 3), Color.White);
+                    spriteBatch.DrawString(Font, (String.Format("Stage {0}", Stage)), new Vector2(ScreenSize.X - 200, 30), Color.White);
 
                     for (int i = 1; i <= PlayerShip.HealthMax; i++)
                     {

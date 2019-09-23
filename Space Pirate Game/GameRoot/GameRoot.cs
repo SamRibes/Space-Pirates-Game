@@ -47,7 +47,7 @@ namespace ShootShapesUp
             //Player sprite
             Player = Content.Load<Texture2D>("Art/Player");
             //Enemy sprites
-            Basic = Content.Load<Texture2D>("Art/Enemies/Basic_Pirate");
+            Basic = Content.Load<Texture2D>("Art/Enemies/Basic");
             TwinShot = Content.Load<Texture2D>("Art/Enemies/TwinShot");
             Asteroid = Content.Load<Texture2D>("Art/Enemies/Asteroid");
             MissileEnemy = Content.Load<Texture2D>("Art/Enemies/Missile_Enemy");
@@ -83,13 +83,12 @@ namespace ShootShapesUp
             Game_Complete = Content.Load<Texture2D>("Art/Backgrounds/Game_Complete");
             Game_Over = Content.Load<Texture2D>("Art/Backgrounds/Game_Over");
 
-            //Asteroid = new SpriteSheet(Content.Load<Texture2D>("Art/asteroid_sprite_sheet"), 10f, 50, 50, 32);
             texture = new Texture2D(graphics.GraphicsDevice, 1, 1);
             texture.SetData(new Color[] { Color.Green });
             pixel = new Texture2D(graphics.GraphicsDevice, 1, 1, false, SurfaceFormat.Color);
             pixel.SetData(new[] { Color.White });
 
-            Font = Content.Load<SpriteFont>("Font/Font");
+            Font = Content.Load<SpriteFont>("Fonts/File");
 
             Music = Content.Load<Song>("Sound/Music");
 
