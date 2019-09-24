@@ -84,7 +84,7 @@ namespace ShootShapesUp
             }
         }
 
-        #region EnemyTypes
+        #region Pick up types
         IEnumerable<int> SmallScrap()
         {
             Scale = 2f;
