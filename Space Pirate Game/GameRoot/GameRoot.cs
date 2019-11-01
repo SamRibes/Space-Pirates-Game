@@ -44,35 +44,46 @@ namespace ShootShapesUp
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            //Player sprite
+
+            #region Player sprite
             Player = Content.Load<Texture2D>("Art/Player");
-            //Enemy sprites
+            #endregion
+
+            #region Enemy sprites
             Basic = Content.Load<Texture2D>("Art/Enemies/Basic");
             TwinShot = Content.Load<Texture2D>("Art/Enemies/TwinShot");
             Asteroid = Content.Load<Texture2D>("Art/Enemies/Asteroid");
             MissileEnemy = Content.Load<Texture2D>("Art/Enemies/Missile_Enemy");
-            //Boss sprites
+            #endregion
+
+            #region Boss Sprites
             Boss_Body = Content.Load<Texture2D>("Art/Boss/Boss");
             Boss_Turret_1 = Content.Load<Texture2D>("Art/Boss/Boss_Turret_1");
             Boss_Turret_2 = Content.Load<Texture2D>("Art/Boss/Boss_Turret_2");
             Dead_Boss = Content.Load<Texture2D>("Art/Boss/Dead_Boss");
-            //Bullet sprites
+            #endregion
+
+            #region Bullet sprites
             PlayerBullet = Content.Load<Texture2D>("Art/Bullets/Player_Bullet");
             BasicBullet = Content.Load<Texture2D>("Art/Bullets/Basic_Bullet");
             TwinBullet = Content.Load<Texture2D>("Art/Bullets/Twin_Bullet");
             Missile = Content.Load<Texture2D>("Art/Bullets/Missile");
-            //Pickups
+            #endregion
+
+            #region Pickups
             Coin1 = Content.Load<Texture2D>("Art/Pickups/coin-1");
             Coin2 = Content.Load<Texture2D>("Art/Pickups/coin-2");
             Coin3 = Content.Load<Texture2D>("Art/Pickups/coin-3");
             Coin4 = Content.Load<Texture2D>("Art/Pickups/coin-4");
             Heart = Content.Load<Texture2D>("Art/Pickups/Heart");
+            #endregion
 
-            //Other
+            #region Other
             Pointer = Content.Load<Texture2D>("Art/Pointer");
             Crosshair = Content.Load<Texture2D>("Art/crosshair");
+            #endregion
 
-            //Backgrounds
+            #region Backgrounds
             Background1 = Content.Load<Texture2D>("Art/Backgrounds/Level1_Background");
             Background2 = Content.Load<Texture2D>("Art/Backgrounds/Level2_Background");
             Background3 = Content.Load<Texture2D>("Art/Backgrounds/Level3_Background");
@@ -82,6 +93,7 @@ namespace ShootShapesUp
             Title_Screen_3 = Content.Load<Texture2D>("Art/Backgrounds/Title_Screen_3");
             Game_Complete = Content.Load<Texture2D>("Art/Backgrounds/Game_Complete");
             Game_Over = Content.Load<Texture2D>("Art/Backgrounds/Game_Over");
+            #endregion
 
             texture = new Texture2D(graphics.GraphicsDevice, 1, 1);
             texture.SetData(new Color[] { Color.Green });
